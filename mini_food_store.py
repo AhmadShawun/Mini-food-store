@@ -26,3 +26,12 @@ if item_1 in menu:
     print(f"Your {item_1} has been added to your order")
 else:
     print(f"Ordered item {item_1} is not available")
+
+anotheerOrder = input("Do you want to add another order? yes/no: ")
+if anotheerOrder == 'yes':
+    item_2 = input("Enter the name od second item: ")
+    if item_2 in menu:
+        orderTotal += menu[item_2]
+        print(f"Item {item_2} has been added to order")
+    else:
+        print(f"Ordered item {item_2} is not available")
