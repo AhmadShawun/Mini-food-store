@@ -32,6 +32,7 @@ if anotheerOrder == 'yes':
     item_2 = input("Enter the name od second item: ")
     if item_2 in menu:
         orderTotal += menu[item_2]
-        print(f"Item {item_2} has been added to order")
+        print(f" {item_2} has been added to order")
     else:
         print(f"Ordered item {item_2} is not available")
+print(f"Total amount of item to pay is {orderTotal} BDT")
